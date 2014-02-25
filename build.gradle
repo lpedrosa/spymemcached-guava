@@ -1,0 +1,15 @@
+apply plugin: 'groovy'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.codehaus.groovy:groovy-all:2.2.1')
+    compile('net.spy:spymemcached:2.10.5')
+    compile('com.google.guava:guava:16.0.1')
+}
